@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@400;500;600;700;800&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -110,7 +112,6 @@ code {
   background: var(--code-bg);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@400;500;600;700;800&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #F5F3EE; font-family: 'Nunito', sans-serif; color: #1C1814; min-height: 100vh; }
 .app { max-width: 820px; margin: 0 auto; padding: 24px 16px 80px; }
