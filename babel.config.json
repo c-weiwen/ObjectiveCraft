@@ -1,0 +1,6 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": { "browsers": [">0.25%", "not dead"] }, "modules": false }],
+    ["@babel/preset-react", { "runtime": "classic" }]
+  ]
+}
