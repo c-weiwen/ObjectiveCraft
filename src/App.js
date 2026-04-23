@@ -13,7 +13,8 @@ async function callClaude(prompt) {
   const wait = MIN_INTERVAL_MS - (now - _lastCallTime);
   if (wait > 0) await new Promise(r => setTimeout(r, wait));
   _lastCallTime = Date.now();
-  const response = await fetch("/freellm/api/v1/chat", {
+  const base = import.meta.env.DEV ? '/freellm' : 'https://apifreellm.com';
+  const response = await fetch(`${base}/api/v1/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
