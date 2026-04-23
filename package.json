@@ -8,7 +8,8 @@
     "compile": "babel src --extensions .jsx --out-dir src --out-file-extension .js",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -19,6 +20,7 @@
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-react": "^7.28.5",
+    "@cloudflare/vite-plugin": "^1.33.1",
     "@eslint/js": "^9.39.4",
     "@rolldown/plugin-babel": "^0.2.1",
     "@types/react": "^19.2.14",
