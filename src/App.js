@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── API ──────────────────────────────────────────────────────────────────────
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
@@ -1388,6 +1389,6 @@ export default function App() {
           })
         })]
       }), showSaved ? Saved() : phase === "welcome" ? Welcome() : phase === "abcd" ? Abcd() : phase === "validate" ? Validate() : phase === "id" ? IdFlow() : phase === "final" ? Final() : null]
-    })]
+    }), /*#__PURE__*/_jsx(Analytics, {})]
   });
 }
